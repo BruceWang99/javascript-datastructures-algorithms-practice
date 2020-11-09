@@ -1,0 +1,10 @@
+{
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": false,
+  "prettier.printWidth": 100,
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "auto"
+    }
+  }
+}
