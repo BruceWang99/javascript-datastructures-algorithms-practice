@@ -8,9 +8,9 @@ import regModeStr from "../../code/regexp/lesson2";
 // test("regModeStr:3", () => {
 //   expect(regModeStr("aaabc", "a*.*")).toBe(true);
 // });
-test("regModeStr:4", () => {
-  expect(regModeStr("mississippi", "mis*is*ip*.")).toBe(true);
-});
-test("regModeStr:5", () => {
-  expect(regModeStr("ab", ".*c")).toBe(true);
-});
+// test("regModeStr:4", () => {
+//   expect(regModeStr("mississippi", "mis*is*ip*.")).toBe(true);
+// });
+// test("regModeStr:5", () => {
+//   expect(regModeStr("ab", ".*c")).toBe(true);
+// });
