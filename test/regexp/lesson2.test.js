@@ -1,7 +1,7 @@
 import regModeStr from "../../code/regexp/lesson2";
-// test("regModeStr", () => {
-//   expect(regModeStr("aaa", "caa*")).toBe(false);
-// });
+test("regModeStr", () => {
+  expect(regModeStr("aaa", "caa*")).toBe(false);
+});
 // test("regModeStr:2", () => {
 //   expect(regModeStr("aaabc", "a*bc")).toBe(true);
 // });
