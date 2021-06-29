@@ -33,9 +33,7 @@ export default (str, words) => {
     return result;
   }
   range([], words);
-  let indexArr = [];
-  result.forEach((item) => {
-    indexArr = indexArr.concat(getIndex(str, item));
-  });
-  return handleRepeat(indexArr.sort((a, b) => a - b));
+  return handleRepeat(result.reduce((acc, item) => {
+    return acc.concat(getIndex(str, item));
+  }, []).sort((a, b) => a - b));
 };
