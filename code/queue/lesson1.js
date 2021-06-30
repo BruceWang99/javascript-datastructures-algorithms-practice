@@ -19,10 +19,13 @@ export default class MyCircularQueue {
     }
   }
   deQueue() {
-    const v = this.list[this.front];
-    this.list[this.front] = '';
-    this.front = (this.front + 1) % this.max; // 队首指针循环
-    return v;
+    if (!this.isEmpty()) {
+      this.list[this.front] = '';
+      this.front = (this.front + 1) % this.max; // 队首指针循环
+      return true;
+    } else {
+      return false;
+    }
   }
   isEmpty() {
     return this.front === this.rear && !this.list[this.front];
@@ -31,9 +34,11 @@ export default class MyCircularQueue {
     return this.front === this.rear && !!this.list[this.front]; // null undefined ''
   }
   Front() {
+    if (this.isEmpty()) return -1;
     return this.list[this.front];
   }
   Rear() {
+    if (this.isEmpty()) return -1;
     const rear = this.rear - 1;
     return this.list[rear < 0 ? this.max - 1 : rear];
   }
