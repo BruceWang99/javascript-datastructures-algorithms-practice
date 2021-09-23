@@ -40,5 +40,7 @@ function isAnagram(s, t) {
     if (arr[index] < 0) return false;
   }
   return true;
+  // 学习到的思路3, 排序后, 看字符串是否相等
+  // return s.split('').sort().join('') === t.split('').sort().join('');
 }
 export default isAnagram;
